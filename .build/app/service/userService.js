@@ -10,20 +10,12 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.UserService = void 0;
+const response_1 = require("../utility/response");
 class UserService {
     constructor() { }
     CreateUser(event) {
         return __awaiter(this, void 0, void 0, function* () {
-            return {
-                statusCode: 200,
-                headers: {
-                    "Access-Control-Allow-Origin": "*",
-                },
-                body: JSON.stringify({
-                    message: "response from signup",
-                    data: {}
-                }),
-            };
+            return (0, response_1.SuccessResponse)({ message: "Response from create user" });
         });
     }
 }

@@ -11,24 +11,13 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Payment = exports.Cart = exports.Profile = exports.Login = exports.Verify = exports.Signup = void 0;
 const userService_1 = require("app/service/userService");
-const service = new userService_1.UserService;
+const service = new userService_1.UserService();
 const Signup = (event) => __awaiter(void 0, void 0, void 0, function* () {
-    /* eslint-disable */ console.log(...oo_oo(`3109212944_8_4_8_22_4`, event));
     return service.CreateUser(event);
-    return {
-        statusCode: 200,
-        headers: {
-            "Access-Control-Allow-Origin": "*",
-        },
-        body: JSON.stringify({
-            message: "response from signup",
-            data: {}
-        }),
-    };
 });
 exports.Signup = Signup;
 const Verify = (event) => __awaiter(void 0, void 0, void 0, function* () {
-    /* eslint-disable */ console.log(...oo_oo(`3109212944_23_4_23_22_4`, event));
+    /* eslint-disable */ console.log(...oo_oo(`89940035_12_2_12_20_4`, event));
     return {
         statusCode: 200,
         headers: {
@@ -36,27 +25,17 @@ const Verify = (event) => __awaiter(void 0, void 0, void 0, function* () {
         },
         body: JSON.stringify({
             message: "response from Verify",
-            data: {}
+            data: {},
         }),
     };
 });
 exports.Verify = Verify;
 const Login = (event) => __awaiter(void 0, void 0, void 0, function* () {
-    /* eslint-disable */ console.log(...oo_oo(`3109212944_36_4_36_22_4`, event));
-    return {
-        statusCode: 200,
-        headers: {
-            "Access-Control-Allow-Origin": "*",
-        },
-        body: JSON.stringify({
-            message: "response from Login",
-            data: {}
-        }),
-    };
+    //   return service.UserLogin(event);
 });
 exports.Login = Login;
 const Profile = (event) => __awaiter(void 0, void 0, void 0, function* () {
-    /* eslint-disable */ console.log(...oo_oo(`3109212944_49_4_49_22_4`, event));
+    /* eslint-disable */ console.log(...oo_oo(`89940035_28_2_28_20_4`, event));
     return {
         statusCode: 200,
         headers: {
@@ -64,13 +43,13 @@ const Profile = (event) => __awaiter(void 0, void 0, void 0, function* () {
         },
         body: JSON.stringify({
             message: "response from Profile",
-            data: {}
+            data: {},
         }),
     };
 });
 exports.Profile = Profile;
 const Cart = (event) => __awaiter(void 0, void 0, void 0, function* () {
-    /* eslint-disable */ console.log(...oo_oo(`3109212944_62_4_62_22_4`, event));
+    /* eslint-disable */ console.log(...oo_oo(`89940035_41_2_41_20_4`, event));
     return {
         statusCode: 200,
         headers: {
@@ -78,13 +57,13 @@ const Cart = (event) => __awaiter(void 0, void 0, void 0, function* () {
         },
         body: JSON.stringify({
             message: "response from Cart",
-            data: {}
+            data: {},
         }),
     };
 });
 exports.Cart = Cart;
 const Payment = (event) => __awaiter(void 0, void 0, void 0, function* () {
-    /* eslint-disable */ console.log(...oo_oo(`3109212944_75_4_75_22_4`, event));
+    /* eslint-disable */ console.log(...oo_oo(`89940035_54_2_54_20_4`, event));
     return {
         statusCode: 200,
         headers: {
@@ -92,7 +71,7 @@ const Payment = (event) => __awaiter(void 0, void 0, void 0, function* () {
         },
         body: JSON.stringify({
             message: "response from Payment",
-            data: {}
+            data: {},
         }),
     };
 });
