@@ -6,6 +6,8 @@ export class UserService {
 
     // User creation, validation and login
         async CreateUser(event: APIGatewayProxyEventV2) {
+            const body = event.body;
+            console.log(body);
             return SuccessResponse({message: "Response from create user"});
         }
         async UserLogin(event: APIGatewayProxyEventV2) {
